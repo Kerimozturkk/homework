@@ -1,0 +1,91 @@
+:root {
+    --container-bf: #fff;
+    --search-bar-bg: #EEEEEE;
+    --card-1-bg: #7EE5DA;
+    --card-2-bg: #70CCC2;
+    --card-3-bg: #62B3AA;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 7px auto;
+    background-color: var(--container-bf);
+    text-align: center;
+    min-width: 350px;
+}
+
+.search-bar {
+    height: 60px;
+    background-color: var(--search-bar-bg);
+    margin: 3px 0px;
+}
+
+input.search-input {
+    width: 309px;
+    height: 15px;
+    padding: 1px 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+    outline: none;
+}
+
+input.search-input:focus {
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.card-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.item-1 {
+    flex-basis: 37%;
+    background-color: var(--card-1-bg);
+}
+
+.item-2 {
+    flex-basis: 19.5%;
+    background-color: var(--card-2-bg);
+}
+
+.item-3 {
+    flex-basis: 43%;
+    background-color: var(--card-3-bg);
+}
+
+.first-card-content {
+    margin: 10px auto 0px;
+}
+
+.second-card-content {
+    margin: 5px 2px 0px;
+    font-size: 0.8em;
+}
+
+.third-card-content {
+    margin: 0px auto 1px;
+    font-size: 0.8em;
+}
+
+.s-btn {
+    margin-right: 10px;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
