@@ -1,0 +1,272 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  /* Menüyü flex-row-reverse yapınca sağ tarafa istediğim gibi sıralandı*/
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+  margin-right: 10px;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+}
+
+.headerli {
+  /* Menu dikey ve yatay hizalamak için içerdeki li elemanlarını flex yaptım ve boşuklu durması için padding ekledim */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5px;
+}
+
+.logo-img {
+  /* Logo orjinal boyutuna indirgendi */
+  width: 272px;
+  height: 92px;
+}
+
+.profile-pic {
+  width: 32px; 
+  height: 32px; 
+  border-radius: 50%;
+}
+
+.profile-pic:hover {
+  /* Profil fotoğrafına gölge ekledim. */
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.45), 0 2px 5px 0 rgba(0,0,0,0.45);
+}
+
+.menu-icon-bg {
+  /* Eklediğim divi hizlayıp hoverına rounded background ekledim. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.menu-icon {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 3px;
+}
+
+.menu-icon-bg:hover {
+  border-radius: 50%;
+  background-color: rgba(60,64,67,.08);
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+  /* Dikey ortalamayı ayarlayamadığım için böyle bir saçmalık uydurdum margin-top:%10 */
+  margin-top: 10%; 
+  text-align: center;
+  /* Logonun marginini düzenledim */
+}
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 582px;
+}
+
+.search-area:hover {
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+/* voice.png eklendi */
+.voice-png {
+  width: 25px;
+  height: 25px;
+}
+
+.voice-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+
+}
+
+.voice-img span {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+/* voice.png sonu */
+
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  /* width 480px yapıldı. */
+  border: none;
+  width: 480px; 
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+}
+
+/* div.buttons güncellemesi */
+.buttons {
+  text-align: center;
+  padding-top: 18px;
+}
+
+.googlesearch {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  /* Buton Güncellemeleri */
+  border: 1px solid #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 36px;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.googlesearch:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.feelinglucky {
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  /* Buton Güncellemeleri */
+  border: 1px solid #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 36px;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.feelinglucky:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+  list-style: none;
+}
+
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footerli {
+  float: left;
+}
+
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+
+.footerli a:hover {
+  text-decoration: underline;
+}
