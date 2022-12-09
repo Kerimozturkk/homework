@@ -6,7 +6,7 @@ let myClock = document.querySelector('#myClock');
 /*
     Bu uygulamada önemli olan saatin devamlı bir şekilde ekrana bastırılabilmesidir.
     Bu yüzden Date() fonbksiyonlarının sürekli olarak istenmesi gerekmektedir.
-    Onload fonksiyonumuzu setTimeout tekrar tekrar çalıştırırsak zamanı her saniye alabiliriz.
+    Onload fonksiyonumuzu setTimeout ile tekrar tekrar çalıştırırsak zamanı her saniye alabiliriz.
     Ekrana yazdırma işinide aynı fonksiyonun içinde tanımlarsak her saniye doğru zaman ekrana 
     yazdırılır.
     Gün ve saat bilgilerinin düzgün gözükmesi için yardımcı  fonksiyon tanımladım. 
